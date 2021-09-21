@@ -1,3 +1,3 @@
 module github.com/catmullet/go-workers
 
-go 1.15
+go 1.16
