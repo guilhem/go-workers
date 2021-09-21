@@ -69,7 +69,7 @@ func (r *Runner) Send(in interface{}) error {
 }
 
 // InFrom Set a worker to accept output from another worker(s).
-func (r *Runner) InFrom(w ...Runner) *Runner {
+func (r *Runner) InFrom(w ...*Runner) *Runner {
 	for _, wr := range w {
 		// create a chan for producer to close it without impacting other producers
 		aggChan := make(chan interface{})
